@@ -4,7 +4,6 @@ s3 = session.resource('s3')
 @click.command()
 @click.option('--deployments',help="Number of deployments to keep")
 @click.option('--bucket', help="S3 Deployment bucket")
-@click.option('--local',help="Sets the aws session profile name")
 
 def deployment_cleanup(deployments,bucket):
     #get list of objects
